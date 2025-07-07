@@ -233,4 +233,37 @@ This ensures the domain controller keeps the same private IP address permanently
 <p>
 <img src="https://i.postimg.cc/28QrKTS0/ip-config-all-dns-server.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<h3>Part 2 - Install Active Directory
+ </h3>
+
+ <p>
+<h4>
+  Step 1: Login to DC-1 and install Active Directory Domain Services
+</h4>
+
+- Log into dc-1 via RDP
+
+- Open Server Manager
+
+- Click Add Roles and Features
+
+- Proceed through the wizard to the Server Roles page
+
+- Check Active Directory Domain Services
+
+- When prompted, select Restart destination server automatically if required
+
+- Click Next through the remaining pages and then Install
+
+- Wait for the installation to complete (server will reboot if needed)
+</p>
+<p>
+<img src="https://i.postimg.cc/T3KWzpp7/server-manager.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.postimg.cc/g0PkgJR6/restartr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+ 
 <br />
