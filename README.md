@@ -163,6 +163,7 @@ This ensures the domain controller keeps the same private IP address permanently
 <img src="https://i.postimg.cc/pT57j1FR/static.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
+<p>
 <h4>
   Step 5: Log into DC-1 and disable the Windows Firewall (for testing connectivity)
 </h4>
@@ -183,5 +184,28 @@ This ensures the domain controller keeps the same private IP address permanently
 </p>
 <p>
 <img src="https://i.postimg.cc/44DPLQY2/turn-off-firewall.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+<h4>
+  Step 6: Set Client-1’s DNS settings to DC-1’s Private IP address
+</h4>
+
+- In the Azure portal, go to Virtual machines and select client-1
+
+- Under Network, click Network settings
+
+- Click Network interface / IP configurations
+
+- In the left panel, select DNS servers
+
+- Choose Custom
+
+- Paste the private IP address of dc-1 into the DNS server field
+
+- Click Save to apply the DNS change to client-1
+</p>
+<p>
+<img src="https://i.postimg.cc/QMdv8Jkk/change-dns.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
