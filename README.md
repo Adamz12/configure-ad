@@ -141,7 +141,25 @@ Administrator account:
 <p>
 <img src="https://i.postimg.cc/C5vGJwD8/creating-client-1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<h4>
+  Step 4: Set Domain Controller’s NIC Private IP address to be static
+</h4>
+
+- In the Azure portal, go to Virtual machines and select dc-1
+
+- Under Networking, click Network settings
+
+- Click Network interface / IP configurations
+
+- Select ipconfig1
+
+- Change Assignment from Dynamic to Static, enter your chosen IP (e.g., 10.0.0.4), and click Save
+
+This ensures the domain controller keeps the same private IP address permanently.
+</p>
+<p>
+<img src="https://i.postimg.cc/pT57j1FR/static.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
