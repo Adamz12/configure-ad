@@ -324,7 +324,7 @@ Create a Domain Admin user within the domain
 <img src="https://i.postimg.cc/WpFYVL4X/ou.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.postimg.cc/SKxVtH5L/admin-employees.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/SKxVtH5L/admin-employees.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
  
 <br />
