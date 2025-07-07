@@ -162,4 +162,26 @@ This ensures the domain controller keeps the same private IP address permanently
 <p>
 <img src="https://i.postimg.cc/pT57j1FR/static.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<h4>
+  Step 5: Log into DC-1 and disable the Windows Firewall (for testing connectivity)
+</h4>
+
+- Open your RDP client and connect to dc-1 using its public IP and the labuser/Cyberman111! credentials
+
+- Once logged in, press Win+R, type wf.msc, and press Enter to open Windows Defender Firewall with Advanced Security
+
+- In the left pane, right-click Windows Defender Firewall with Advanced Security on Local Computer and select Properties
+
+- In the Properties window, for each profile tab (Domain Profile, Private Profile, Public Profile):
+
+- Set Firewall state to Off
+
+- Click Apply
+
+- Click OK to close the dialog—Windows Firewall is now disabled on the domain controller for testing purposes.
+</p>
+<p>
+<img src="https://i.postimg.cc/44DPLQY2/turn-off-firewall.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 <br />
