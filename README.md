@@ -300,5 +300,31 @@ This ensures the domain controller keeps the same private IP address permanently
 <img src="https://i.postimg.cc/zfJM0Zdk/unchecked.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
+ <p>
+<h4>
+  Step 3: 
+Create a Domain Admin user within the domain
+</h4>
+
+- On dc-1, click the Start button and open Windows Administrative Tools → Active Directory Users and Computers
+
+- In the left pane, expand mydomain.com
+
+- Right-click mydomain.com, choose New → Organizational Unit
+
+- Name the first OU exactly _EMPLOYEES and click OK
+
+- Repeat the process to create a second OU named exactly _ADMINS
+  
+</p>
+<p>
+<img src="https://i.postimg.cc/xTLskvMm/windows-key.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.postimg.cc/WpFYVL4X/ou.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.postimg.cc/SKxVtH5L/admin-employees.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
  
 <br />
