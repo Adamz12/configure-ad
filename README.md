@@ -66,10 +66,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <p>
-<img src="https://i.postimg.cc/Y09J9qzD/A-Resource-Group.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/Y09J9qzD/A-Resource-Group.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.postimg.cc/SN8pzjpH/A-Virtual-Network.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/SN8pzjpH/A-Virtual-Network.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
 <br />
@@ -101,7 +101,7 @@ Administrator account:
 
 </p>
 <p>
-<img src="https://i.postimg.cc/nzJGhRpX/creating-dc1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/nzJGhRpX/creating-dc1.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -139,7 +139,7 @@ Administrator account:
 - client-1 (Windows 10 Pro) to join your new domain.
 </p>
 <p>
-<img src="https://i.postimg.cc/C5vGJwD8/creating-client-1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/C5vGJwD8/creating-client-1.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -160,7 +160,7 @@ Administrator account:
 This ensures the domain controller keeps the same private IP address permanently.
 </p>
 <p>
-<img src="https://i.postimg.cc/pT57j1FR/static.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/pT57j1FR/static.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -183,7 +183,7 @@ This ensures the domain controller keeps the same private IP address permanently
 - Click OK to close the dialog—Windows Firewall is now disabled on the domain controller for testing purposes.
 </p>
 <p>
-<img src="https://i.postimg.cc/44DPLQY2/turn-off-firewall.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/44DPLQY2/turn-off-firewall.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -206,7 +206,7 @@ This ensures the domain controller keeps the same private IP address permanently
 - Click Save to apply the DNS change to client-1
 </p>
 <p>
-<img src="https://i.postimg.cc/QMdv8Jkk/change-dns.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/QMdv8Jkk/change-dns.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -225,13 +225,13 @@ This ensures the domain controller keeps the same private IP address permanently
 - Confirm DNS Servers lists dc-1’s private IP address
 </p>
 <p>
-<img src="https://i.postimg.cc/qvGBzQfN/restart-client-1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/qvGBzQfN/restart-client-1.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.postimg.cc/FzcNmVgs/ping-dc-1-private-ip.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/FzcNmVgs/ping-dc-1-private-ip.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.postimg.cc/28QrKTS0/ip-config-all-dns-server.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/28QrKTS0/ip-config-all-dns-server.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Part 2 - Install Active Directory
@@ -259,10 +259,10 @@ This ensures the domain controller keeps the same private IP address permanently
 - Wait for the installation to complete (server will reboot if needed)
 </p>
 <p>
-<img src="https://i.postimg.cc/T3KWzpp7/server-manager.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/T3KWzpp7/server-manager.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.postimg.cc/g0PkgJR6/restartr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/g0PkgJR6/restartr.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
  <p>
@@ -291,13 +291,13 @@ This ensures the domain controller keeps the same private IP address permanently
   
 </p>
 <p>
-<img src="https://i.postimg.cc/ZqHkSK9g/flag.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/ZqHkSK9g/flag.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.postimg.cc/nrsNB4db/forest.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/nrsNB4db/forest.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.postimg.cc/zfJM0Zdk/unchecked.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/zfJM0Zdk/unchecked.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
  <p>
@@ -318,10 +318,10 @@ Create a Domain Admin user within the domain
   
 </p>
 <p>
-<img src="https://i.postimg.cc/xTLskvMm/windows-key.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/xTLskvMm/windows-key.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.postimg.cc/WpFYVL4X/ou.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.postimg.cc/WpFYVL4X/ou.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <img src="https://i.postimg.cc/SKxVtH5L/admin-employees.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
