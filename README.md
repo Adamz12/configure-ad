@@ -45,7 +45,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>Part 1 - Setup Controller in Azure and Client 1 </h3>
 
 <p>
-
+<h4>Step 1: Set Up the Azure Foundation</h4>
+  
 - In the Azure portal, click Create a resource → Resource group
 
 - Name: Active-Directory-Lab
@@ -74,15 +75,71 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h4>Step 2: Deploy the Domain Controller VM (dc-1)</h4>
+  
+- In the Azure portal, click Create a Virtual machine
+
+- Resource group: Active-Directory-Lab
+
+- VM name: dc-1
+
+- Image: Windows Server 2022 Datacenter (Gen2)
+
+- Size: (choose an appropriate size, e.g., Standard_D2s_v3)
+
+Administrator account:
+
+- Username: labuser
+
+- Password: Cyberman111!
+
+- Windows licensing: Tick Azure Hybrid Benefit (if applicable) or accept the licensing terms
+
+- Networking → Virtual network: Active-Directory-Vnet
+
+- Leave other settings at their defaults, then click Review + create → Create
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.postimg.cc/nzJGhRpX/creating-dc1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h4>
+  Step 3: Deploy the Client VM (client-1)
+</h4>
+ 
+- Click Create a Virtual machine
+
+- Resource group: Active-Directory-Lab
+
+- VM name: client-1
+
+- Image: Windows 10 Pro, Version 22H2
+
+- Size: (e.g., Standard_B2ms)
+
+Administrator account:
+
+- Username: labuser
+
+- Password: Cyberman111!
+
+- Windows licensing: Tick Azure Hybrid Benefit or accept licensing terms
+
+- Networking → Virtual network: Active-Directory-Vnet
+
+- Click Review + create → Create
+
+- You now have two VMs in the Active-Directory-Lab RG on the Active-Directory-Vnet:
+
+- dc-1 (Windows Server 2022) ready to become your domain controller
+
+- client-1 (Windows 10 Pro) to join your new domain.
+</p>
+<p>
+<img src="https://i.postimg.cc/C5vGJwD8/creating-client-1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
