@@ -265,5 +265,40 @@ This ensures the domain controller keeps the same private IP address permanently
 <img src="https://i.postimg.cc/g0PkgJR6/restartr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
+ <p>
+<h4>
+  Step 2: Promote as a DC: Setup a new forest as mydomain.com and Restart and then log back into DC-1 as user: mydomain.com\labuser
+
+</h4>
+
+- Log into dc-1 via RDP
+
+- Open Server Manager and click the flag icon, then Promote this server to a domain controller
+
+- Select Add a new forest and enter mydomain.com as the Root domain name
+
+- Click Next, set the Directory Services Restore Mode (DSRM) password, and click Next
+
+- On the DNS Options page, leave Create DNS delegation unchecked and click Next
+
+- Accept the defaults on the Paths page and click Next
+
+- Review your settings, then click Install
+
+- The server will reboot automatically
+
+- After restart, log back into dc-1 as mydomain.com\labuser
+  
+</p>
+<p>
+<img src="https://i.postimg.cc/ZqHkSK9g/flag.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.postimg.cc/nrsNB4db/forest.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.postimg.cc/zfJM0Zdk/unchecked.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
  
 <br />
