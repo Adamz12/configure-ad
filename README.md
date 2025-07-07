@@ -208,4 +208,29 @@ This ensures the domain controller keeps the same private IP address permanently
 <p>
 <img src="https://i.postimg.cc/QMdv8Jkk/change-dns.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<p>
+<h4>
+  Step 7: Attempt to ping DC-1’s private IP address from Client-1
+</h4>
+
+- Restart client-1 from the Azure portal
+
+- Log into client-1
+
+- Open PowerShell and run ping <dc-1-private-IP>
+
+- Run ipconfig /all
+
+- Confirm DNS Servers lists dc-1’s private IP address
+</p>
+<p>
+<img src="https://i.postimg.cc/qvGBzQfN/restart-client-1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.postimg.cc/FzcNmVgs/ping-dc-1-private-ip.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.postimg.cc/28QrKTS0/ip-config-all-dns-server.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 <br />
