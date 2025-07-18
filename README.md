@@ -407,4 +407,40 @@ Create a Domain Admin user within the domain - Log out / close the connection to
 <img src="https://i.postimg.cc/DZQJjgDY/log-in-jane-admin.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
+<p>
+<h4>
+  Step 7: 
+Join Client-1 to your domain (mydomain.com)
+
+</h4>
+
+- Log into client-1 via RDP using labuser/Cyberman111!
+
+- Open Settings → System → About, then click Rename this PC (advanced)
+
+- In the System Properties window, click Change… next to “To rename this computer…”
+
+- Select the Domain option, enter mydomain.com, and click OK
+
+- When prompted, enter mydomain.com\jane_doe as the username and Cyberman111! as the password
+
+- Click OK to confirm, then OK again on the welcome message
+
+- Allow client-1 to restart—after reboot, it will be joined to the mydomain.com domain
+
+- Then log onto DC1 and go to active directory users and computers
+
+- mydomain.com then go to computers and client 1 should be there
+  
+</p>
+ <p>
+<img src="https://i.postimg.cc/k5vw8xsq/client-1-connect-to-domain.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+ <p>
+<img src="https://i.postimg.cc/RhyT9GSQ/ok-message.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+ <p>
+<img src="https://i.postimg.cc/9XKPD82y/checking-client1-connected-dc1.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+
 <br />
