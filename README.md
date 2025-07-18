@@ -365,5 +365,31 @@ In the New Object – User wizard:
 <p>
 <img src="https://i.postimg.cc/MpYLw2BW/new-admin-details.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
+
+ <p>
+<h4>
+  Step 5: 
+Create a Domain Admin user within the domain - Add jane_admin to the “Domain Admins” Security Group
+
+</h4>
+
+- Open Active Directory Users and Computers on dc-1
+
+- Navigate to the _ADMINS OU and find Jane Doe
+
+- Right-click Jane Doe and select Properties
+
+- Go to the Member Of tab and click Add…
+
+- Type Domain Admins, click Check Names (it should underline), then click OK
+
+- Back in the Member Of tab, click Apply, then OK
+
+Jane Doe now belongs to the Domain Admins group and has full administrative privileges across the domain.
+  
+</p>
+<p>
+<img src="https://i.postimg.cc/fbGmgkbk/jane-becomes-admin.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
  
 <br />
