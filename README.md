@@ -326,5 +326,44 @@ Create a Domain Admin user within the domain
 <p>
 <img src="https://i.postimg.cc/SKxVtH5L/admin-employees.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
+
+ <p>
+<h4>
+  Step 4: 
+Create a Domain Admin user within the domain - Create a new employee named “Jane Doe”
+</h4>
+
+- Open Active Directory Users and Computers on dc-1
+
+- Expand mydomain.com and select the _ADMINS OU
+
+- Right-click _ADMINS → New → User
+
+In the New Object – User wizard:
+
+- First name: Jane
+
+- Last name: Doe
+
+- Full name: Jane Doe
+
+- User logon name: jane_doe
+
+- Click Next, then set Password: Cyberman111!
+
+- Check Password never expires and uncheck any other options (e.g., “User must change password at next logon”)
+
+- Click Next, then Finish to create the new admin account.
+  
+</p>
+<p>
+<img src="https://i.postimg.cc/wMs5jJbX/new-admin-creds.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.postimg.cc/L4rwBVRM/new-admin-password.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.postimg.cc/MpYLw2BW/new-admin-details.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
  
 <br />
