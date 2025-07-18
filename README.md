@@ -391,5 +391,20 @@ Jane Doe now belongs to the Domain Admins group and has full administrative priv
 <p>
 <img src="https://i.postimg.cc/fbGmgkbk/jane-becomes-admin.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
- 
+
+<h4>
+  Step 6: 
+Create a Domain Admin user within the domain - Log out / close the connection to DC-1 and log back in as jane_admin
+
+</h4>
+
+- Log out
+- Then log in as  “mydomain.com\jane_admin”
+- Use jane_admin as your admin account from now on
+  
+</p>
+ <p>
+<img src="https://i.postimg.cc/DZQJjgDY/log-in-jane-admin.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+
 <br />
