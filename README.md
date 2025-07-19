@@ -443,4 +443,26 @@ Join Client-1 to your domain (mydomain.com)
 <img src="https://i.postimg.cc/9XKPD82y/checking-client1-connected-dc1.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
+<p>
+<h4>
+  Step 8: 
+Create a new OU named “_CLIENTS” 
+
+</h4>
+
+- On dc-1, open Active Directory Users and Computers
+
+- In the left pane, right-click mydomain.com, choose New → Organizational Unit
+
+- Name the OU exactly _CLIENTS and click OK
+
+- In the left pane, click Computers to view all joined machines
+
+- Find client-1, then drag and drop it into the newly created _CLIENTS OU
+  
+</p>
+ <p>
+<img src="https://i.postimg.cc/26Bg28x8/moving-client-1-to-clients.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+
 <br />
