@@ -465,4 +465,36 @@ Create a new OU named “_CLIENTS”
 <img src="https://i.postimg.cc/26Bg28x8/moving-client-1-to-clients.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
+<h3>Part 2 - Setup Remote Desktop for non-administrative users on Client-1 and Create a bunch of additional users and attempt to log into client-1 with one of the users
+ </h3>
+
+<p>
+<h4>
+  Step 1: 
+Setup Remote Desktop for non-administrative users on Client-1
+
+</h4>
+
+- Log into client-1 as mydomain.com\jane_doe
+
+- Open Settings → System → Remote Desktop
+
+- Click Select users that can remotely access this PC
+
+- In the Remote Desktop Users dialog, click Add…
+
+- Enter Domain Users, click Check Names, then OK
+
+- Click OK again to close the dialog
+
+Now any non-admin domain user can establish an RDP session to client-1.
+</p>
+ <p>
+<img src="https://i.postimg.cc/52fw97Yx/system-remote-desktop.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+ <p>
+<img src="https://i.postimg.cc/tJhxpW9Z/domain-users-access.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+ 
+
 <br />
