@@ -529,4 +529,22 @@ Paste the contents of the script from:
 <img src="https://i.postimg.cc/9FgZFQrc/check-aduc.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
+<p>
+<h4>
+  Step 3:  
+ Attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+</h4>
+
+- On client-1, log in as one of the created users
+
+- Enter Username: mydomain.com\<sampleUsername> (replace <sampleUsername> with one of the script-generated accounts)
+
+- Enter Password: Password1
+
+- If the desktop loads successfully, the account creation and domain join are confirmed working
+</p>
+  <p>
+<img src="https://i.postimg.cc/VvQ1FMGz/additional-user-credentials.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+
 <br />
