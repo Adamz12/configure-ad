@@ -495,6 +495,38 @@ Now any non-admin domain user can establish an RDP session to client-1.
  <p>
 <img src="https://i.postimg.cc/tJhxpW9Z/domain-users-access.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
- 
+
+<p>
+<h4>
+  Step 2: 
+ Create a bunch of additional users
+
+</h4>
+
+- Log into dc-1 as mydomain.com\jane_doe
+
+- Open Windows PowerShell ISE as Administrator
+
+- In the ISE window, click File → New
+
+- Click File → Save, name it create-users.ps1, and save it to a convenient location (e.g., your Documents folder or Desktop)
+
+Paste the contents of the script from:
+- https://raw.githubusercontent.com/joshmadakor1/AD_PS/master/Generate-Names-Create-Users.ps1
+
+- Run the script and observe the accounts being created
+</p>
+  <p>
+<img src="https://i.postimg.cc/4350mctY/windows-powershell-ise.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/tTc2xNg4/create-script.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/yd3rnbtZ/observe-accounts.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/9FgZFQrc/check-aduc.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
 
 <br />
