@@ -551,6 +551,9 @@ Paste the contents of the script from:
  </h3>
 
  <p>
+<h3> 
+Dealing with Account Lockouts
+</h3>
 <h4>
   Step 1:  
 Attempt to log in after failed login attempts
@@ -634,6 +637,36 @@ Lockout account and then reset password and login to account
 </p>
   <p>
 <img src="https://i.postimg.cc/HWBYwjG5/reset-password.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3> 
+Enabling and Disabling Accounts
+</h3>
+<h4>
+  Step 1:  
+Disable the same account in Active Directory and Attempt to login with it, observe the error message
+</h4>
+
+- On dc-1, open Active Directory Users and Computers
+
+- Right-click mydomain.com and select Find…, then search for the target user account
+
+- In the results, right-click the user and choose Disable Account
+
+- On client-1, attempt to sign in as that user—you should see an account-disabled error
+
+- Back on dc-1, in Active Directory Users and Computers, find the same user, right-click them and select Enable Account
+
+= Return to client-1 and sign in—the account will now work again
+</p>
+  <p>
+<img src="https://i.postimg.cc/VNW508jk/disable-account.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/28WkBYYN/error-message.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/02761DbS/enable.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
 <br />
