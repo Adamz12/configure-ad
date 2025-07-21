@@ -550,4 +550,58 @@ Paste the contents of the script from:
 <h3>Part 3 - Group Policy and Managing Accounts
  </h3>
 
+ <p>
+<h4>
+  Step 1:  
+Attempt to log in after failed login attempts
+</h4>
+
+- On client-1, log in as one of the created users, it can be the same one as before
+
+- Attempt to sign in as: mydomain.com\<sampleUsername> (replace <sampleUsername> with one of the script-generated accounts) with an incorrect password ten times in a row
+
+- After the tenth failed attempt, enter the correct password: Password1
+
+- If the login succeeds, your domain’s account lockout policy isn’t in effect; otherwise, the account will be locked and you’ll see an error indicating you must wait or contact an administrator.
+</p>
+  <p>
+<img src="https://i.postimg.cc/85xxkB8L/failed-credentials.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+
+ <p>
+<h4>
+  Step 2:  
+Configure Group Policy to Lockout the account after 5 attempts:
+</h4>
+
+- On dc-1, open Group Policy Management (Search “gpmc.msc” and run it)
+
+- In the left tree under Forest: mydomain.com → Domains → mydomain.com, right-click Default Domain Policy and choose Edit
+
+- In the Group Policy Management Editor, expand:
+
+- Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Account Lockout Policy
+
+- Double-click Account lockout threshold, set it to 5 invalid logon attempts, and click OK
+
+- Double-click Account lockout duration, set it to 30 minutes, and click OK
+
+- Close the editor
+
+On client-1, log in as mydomain.com\jane_doe, open Command Prompt, and run:
+- gpupdate /force
+  
+- This immediately applies the new lockout policy so future failed logons will lock accounts after five attempts.
+</p>
+  <p>
+<img src="https://i.postimg.cc/mDSVJYLb/gpmu.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/5yTzRyC4/account-policy.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/rsm7qVwR/gpupdate.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+
+
 <br />
