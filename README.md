@@ -547,4 +547,7 @@ Paste the contents of the script from:
 <img src="https://i.postimg.cc/VvQ1FMGz/additional-user-credentials.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
+<h3>Part 3 - Group Policy and Managing Accounts
+ </h3>
+
 <br />
