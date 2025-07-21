@@ -603,5 +603,37 @@ On client-1, log in as mydomain.com\jane_doe, open Command Prompt, and run:
 <img src="https://i.postimg.cc/rsm7qVwR/gpupdate.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
+ <p>
+<h4>
+  Step 3:  
+Lockout account and then reset password and login to account
+</h4>
+
+- On client-1, attempt to sign in as mydomain.com\[user account] with a wrong password six times—this should now lock the account.
+
+- On dc-1, open Active Directory Users and Computers.
+
+- Right-click mydomain.com and select Find…, then search for [user account].
+
+- Double-click the user entry and go to the Account tab—confirm Account is locked out is checked.
+
+- Uncheck Account is locked out and click OK.
+
+- Right-click [user account], choose Reset Password…, enter Password2, check Unlock account, then click OK.
+
+- Back on client-1, sign in as mydomain.com\[user account] with the new password Password2—the login should now succeed.
+</p>
+  <p>
+<img src="https://i.postimg.cc/N0hjPVjw/lockout.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/GtzjXGFZ/confirm-account-lockedout.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/d1wHnsMZ/unlock.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/HWBYwjG5/reset-password.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
 
 <br />
