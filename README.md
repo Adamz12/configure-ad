@@ -703,4 +703,12 @@ Observe logs on DC-1 and Client-1
 <img src="https://i.postimg.cc/jjBv2Br2/event-viewer-client.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
+<h3> 
+Conclusion
+</h3>
+
+<p>
+This lab guided you through building an Active Directory environment from the ground up: creating an Azure resource group and virtual network, deploying a domain controller (dc-1) and a Windows client (client-1), promoting dc-1 into a new forest (mydomain.com), and joining client-1 to the domain. You then defined OUs (_EMPLOYEES, _ADMINS, _CLIENTS), created user and admin accounts (including bulk generation), applied group policies (lockout thresholds), and tested account behaviors (lockout, disable/enable) as well as logon auditing via Event Viewer. Finally, you enabled non-admin RDP access and verified DNS resolution. To avoid charges, remember to shut down—or delete—the VMs and resource group when you’re done. Great work on mastering core AD deployment and management!
+</p>
+
 <br />
