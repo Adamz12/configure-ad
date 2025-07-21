@@ -669,4 +669,38 @@ Disable the same account in Active Directory and Attempt to login with it, obser
 <img src="https://i.postimg.cc/02761DbS/enable.png" height="800" width="800" alt="Disk Sanitization Steps"/>
 </p>
 
+<h3> 
+Observing Logs
+</h3>
+<h4>
+  Step 1:  
+Observe logs on DC-1 and Client-1
+</h4>
+
+- RDP into dc-1 and open Event Viewer
+
+- Expand Windows Logs and select Security to view all login events on the domain controller
+
+- On client-1, log in with the user account you have been using
+
+- Right-click the Start button, choose Event Viewer (Run as administrator)
+
+- When prompted, enter mydomain.com\jane_doe and Cyberman111!
+
+- In Event Viewer, expand Windows Logs → Security
+
+- Right-click Security, select Find…, enter the target user’s account name, and click Find Next
+
+- Review the filtered entries to see that user’s successful and failed logon attempts on the client machine
+</p>
+  <p>
+<img src="https://i.postimg.cc/15pxQcwD/event-viewer-dc1.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/vTr0phkB/event-viewer-admin.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+  <p>
+<img src="https://i.postimg.cc/jjBv2Br2/event-viewer-client.png" height="800" width="800" alt="Disk Sanitization Steps"/>
+</p>
+
 <br />
